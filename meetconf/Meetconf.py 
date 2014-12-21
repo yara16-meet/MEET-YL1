@@ -1,0 +1,69 @@
+import turtle
+x,y=turtle.position()
+turtle.goto(x,y)
+turtle.pendown()
+turtle.color("red")
+turtle.pencolor("yellow")
+turtle.onscreenclick(turtle.goto,btn=1,add=True)
+turtle.shape("turtle")
+
+def yara():
+	turtle.color("blue")
+	turtle.pencolor("red")
+turtle.getscreen().onkeypress(yara, "space")
+
+def lol():
+	turtle.shape("turtle")
+	turtle.color("green")
+	turtle.pencolor("brown")
+turtle.getscreen().onkeypress(lol, "l")
+def so():
+       turtle.clear()
+turtle.getscreen().onkeypress(so,"o")
+
+def soso():
+	turtle.shape("triangle")
+	turtle.color("pink")
+	turtle.pencolor("orange")
+turtle.getscreen().onkeypress(soso, "p")
+
+
+
+def C(x,y):
+	turtle.penup()
+	turtle.goto(x,y)
+	turtle.pendown()
+	turtle.goto(x+50,y)
+	turtle.goto(x+50,y+50)
+	turtle.goto(x,y+50)
+	turtle.goto(x,y)
+	#draw_C(10,10)
+	turtle.penup()
+def D(x,y):
+	turtle.penup()
+	turtle.goto(x,y)
+	turtle.pendown()
+	turtle.goto(x+25,y+50)
+	turtle.goto(x+50,y)
+	turtle.goto(x,y)
+	#draw_D(20,20)
+	turtle.penup()
+	
+
+def R():
+	turtle.pencolor("red")
+	turtle.color("green")
+	
+turtle.onscreenclick(C,btn=1,add=True)
+turtle.onscreenclick(D,btn=3,add=True)
+turtle.getscreen().onkeypress(R, "r")
+
+
+turtle.getscreen().listen()
+turtle.mainloop()
+
+
+
+
+
+
